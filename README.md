@@ -1,6 +1,6 @@
-# map_listener
+# map_listener_opencv
 
-ROS cpp package which listens and subscribes to the map topic. This mean it saves an occupancy grid map as pgm file.
+ROS package which listens and subscribes to the map topic. This mean it shows an occupancy grid map via OpenCV. 
 
 ## Installation
 
@@ -8,7 +8,7 @@ Go to the `catkin_ws/src` folder and clone the repository:
 
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/Michdo93/map_listener.git
+git clone https://github.com/Michdo93/map_listener_opencv.git
 cd ~/catkin_ws
 catkin_make
 ```
@@ -24,5 +24,5 @@ rosrun map_server map_saver -f ~/map
 you can now run:
 
 ```
-rosrun map_listener mapListener.cpp
+rosrun map_listener_opencv mapListener.py
 ```
